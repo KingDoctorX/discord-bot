@@ -1,13 +1,14 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="KingDoctorX's new website!.">
-  <link rel="shortcut icon" href="https://www.kingdoctorx.tk/assets/img/favicon.ico">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Website created to show projects and simple work by me (KingDoctorX), follow me @KingDoctorX" />
+  <meta name="author" content="KingDoctorX" />
+  <meta name="copyright" content="KingDoctorX" />
+  <link rel="shortcut icon" href="https://www.kingdoctorx.tk/assets/img/favicon.png" />
   <title>KingDoctorX | Discord Bot</title>
 
   <!-- Bootstrap Core CSS -->
@@ -22,6 +23,15 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-2385721827761886",
+              enable_page_level_ads: true
+         });
+    </script>
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -32,8 +42,8 @@
 </head>
 
 <body id="page-top" class="index">
-  <div id="snow">
-  </div>
+  <!-- <div id="snow">
+  </div> -->
   <!-- Navigation -->
   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container">
@@ -42,7 +52,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only"></span> <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand" href="#page-top"><img style="height:40px; margin-top:-15px" src="https://www.kingdoctorx.tk/assets/img/favicon.ico"/></a>
+        <a class="navbar-brand" href="#page-top"><img style="height:40px; margin-top:-15px" src="https://www.kingdoctorx.tk/assets/img/favicon.png" /></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,19 +62,19 @@
             <a href="#page-top"></a>
           </li>
           <li class="page-scroll">
-            <a href="https://www.KingDoctorX.tk/">Home</a>
+            <a href="https://www.KingDoctorX.tk/" onclick="crate.toggle(false)">Home</a>
           </li>
           <li class="page-scroll">
-            <a href="pages/contact.html">Contact Me</a>
+            <a href="https://www.KingDoctorX.tk/pages/links.html" onclick="crate.toggle(false)">Links</a>
           </li>
           <li class="page-scroll">
-            <a href="https://Bot.KingDoctorX.tk/">Bot</a>
+            <a href="https://Bot.KingDoctorX.tk/" onclick="crate.toggle(false)">Bot</a>
           </li>
           <li class="page-scroll">
-            <a href="minecraft://?addExternalServer=Not launched!|KingDoctorX.tk:19132">MC Server</a>
+            <a href="minecraft://?addExternalServer=Not launched!|play.KingDoctorX.tk:19132" onclick="crate.toggle(false)">MC Server</a>
           </li>
           <li class="page-scroll">
-            <a href="pages/projects.html">Projects</a>
+            <a href="projects.html" onclick="crate.toggle(false)">Projects</a>
           </li>
         </ul>
       </div>
@@ -74,23 +84,25 @@
   </nav>
 
   <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-                  <center><h4 class="modal-title" id="videoModalLabel">YouTube | KingDoctorX</h4></center>
-              </div>
-              <div class="modal-body">
-                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                  <iframe id="youtube_video" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-              </div>
-          </div>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="crate.toggle(false)">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <center>
+            <h4 class="modal-title" id="videoModalLabel">YouTube | KingDoctorX</h4>
+          </center>
+        </div>
+        <div class="modal-body">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+          <iframe id="youtube_video" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="crate.toggle(false)">Close</button>
+        </div>
       </div>
+    </div>
   </div>
 
   <!-- Header -->
@@ -102,10 +114,10 @@
           <h2>Discord Bot Invite</h2>
           <h1>⇒ Redirect happens in 15 seconds. ⇐</h1>
           <div class="col-lg-8 col-lg-offset-2 text-center">
-            <a class="btn btn-lg btn-outline" data-toggle="modal" data-target="#videoModal">
+            <a class="btn btn-lg btn-outline" data-toggle="modal" data-target="#videoModal" onclick="crate.toggle(false)">
               <i class="fa fa-play"></i> Play
             </a>
-            <a href="https://www.Twitter.com/KingDoctorX/" class="btn btn-lg btn-outline">
+            <a href="https://www.Twitter.com/KingDoctorX/" class="btn btn-lg btn-outline" onclick="crate.toggle(false)">
               <i class="fa fa-twitter"></i> Twitter
             </a>
           </div>
@@ -114,20 +126,20 @@
     </div>
   </header>
 
-    <!-- Content section -->
-    <section>
-      <div class="container">
-        <h1>Join our Discord Server</h1>
-        <p>Our Discord Server is a lot of fun and we hope to see you there as soon as possible!</p><br>
-        <p>Our Discord provides a lot of channels in which games I play on are announced and when I'm active in game, the server also has my custom Discord Bot ("Atom The Robot") that has many fun commmands that you can use!</p>
+  <!-- Content section -->
+  <section>
+    <div class="container">
+      <h1>Join our Discord Server</h1>
+      <p>Our Discord Server is a lot of fun and we hope to see you there as soon as possible!</p><br>
+      <p>Our Discord provides a lot of channels in which games I play on are announced and when I'm active in game, the server also has my custom Discord Bot ("Atom The Robot") that has many fun commmands that you can use!</p>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row centered">
+        <img src="https://discordapp.com/assets/fc0b01fe10a0b8c602fb0106d8189d9b.png">
       </div>
-      <br>
-      <div class="container">
-        <div class="row centered">
-           <p>Lmao, if you're reading this you should add me on Discord @KingDoctorX#4940 and follow me on Instagram and Twitter @KingDoctorX</p>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="text-center">
@@ -135,7 +147,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            &copy; 2016 - <script>document.write(new Date().getFullYear());</script> KingDoctorX Developer.
+            &copy; 2016 - <script>
+              document.write(new Date().getFullYear());
+            </script> KingDoctorX Developer.
           </div>
         </div>
       </div>
@@ -157,23 +171,34 @@
 
   <!-- Plugin JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+    new Crate({
+      server: '412104602901676032',
+      channel: '412104602901676034',
+      shard: 'https://cl2.widgetbot.io'
+    })
+    crate.notify({
+      content: '`Welcome to my website, enjoy!`',
+      timeout: 4500,
+      avatar: 'https://www.kingdoctorx.tk/assets/img/favicon.png'
+    })
+  </script>
   <script type="text/javascript">
-      var channelID = "UCqrFCjunRPCODt7eu3vkomg";
-      $.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D' + channelID, function(data) {
+    var channelID = "UCqrFCjunRPCODt7eu3vkomg";
+    $.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D' + channelID, function(data) {
       var link = data.items[0].link;
       var id = link.substr(link.indexOf("=") + 1);
       $("#youtube_video").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
-      });
+    });
   </script>
   <script>
-    setTimeout(function(){
-     window.location.href = "http://bit.ly/Atom-the-Robot"
+    setTimeout(function() {
+      window.location.href = "http://bit.ly/Atom-the-Robot"
     }, 18 * 1000);
   </script>
 
   <!-- Theme JavaScript -->
   <script src="https://www.kingdoctorx.tk/assets/js/theme.min.js"></script>
-  <script src="https://www.kingdoctorx.tk/assets/js/important.js"></script>
   <script src="https://www.kingdoctorx.tk/assets/js/smooth-scroll.js"></script>
 
 </body>
